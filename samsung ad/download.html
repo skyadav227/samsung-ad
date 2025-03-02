@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .logo{
+        width: 150px;
+        border-radius: 10px;
+      }
+      .tool-tip{
+       margin-left: 37px;
+       border-radius: 20px;
+      }
+      .main-div{
+        margin: 30px;
+        position: relative;
+      }
+      .main-div .tool-tip{
+       position: absolute;
+       background-color: lightgray;
+       padding-left: 7px;
+       padding-right: 7px;
+       border-radius: 10px;
+       opacity: 0;
+       pointer-events: none;
+      }
+      .main-div:hover .tool-tip{
+        opacity: 1;
+        
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-div">
+      <img class="logo" src="download.png">
+      <div class="tool-tip">download</div>
+    </div>
+  </body>
+</html>
